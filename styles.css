@@ -12,6 +12,7 @@ body {
   height: 100vh;
   background-color: #d5a482;
   color: #4a2b1d;
+  font-size: 16px; /* Set a reasonable base font size */
 }
 header {
   display: flex;
@@ -21,7 +22,7 @@ header {
   margin-top: 20px;
   top: 0;
   left: 0;
-  padding: 1rem;
+  padding: 0.5rem; /* Reduce padding */
   background-color: transparent;
   filter: drop-shadow(10px);
   z-index: 100;
@@ -42,10 +43,10 @@ header {
 }
 nav a {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.1em; /* Smaller nav links */
   color: white;
-  margin-left: 4rem;
-  padding: 10px 0;
+  margin-left: 2rem;
+  padding: 8px 0;
   font-weight: 600;
   transition: border-bottom 0.3s ease;
 }
@@ -77,12 +78,12 @@ nav a:hover {
   text-align: left;
 }
 .home-content-section h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 0.5em;
   color: #4a2b1d;
 }
 .home-content-section h3 {
-  font-size: 2em;
+  font-size: 1.3em;
   margin-bottom: 1em;
   color: #7d5747;
 }
@@ -175,7 +176,7 @@ span {
 }
 section {
   min-height: 100vh;
-  padding: 5rem 9%;
+  padding: 2rem 4%;
 }
 #about h2{
  font-size: 2.5em;
@@ -276,75 +277,73 @@ form button {
     transform: translateX(4px) scale(1.04);
 }
 
-.project-section{
+.project-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 4rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
 }
-.project{
+.project {
   background-color:#edcfc4;
   border-radius: 15px;
   box-shadow:#4a2b1d 0px 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
-.project img{
-  width: 100%;
+.project img {
+  max-width: 350px;
   height: auto;
   border-radius: 8px;
 }
-.project:hover{
+.project:hover {
   transform: translateY(-5px);
 }
-.work-projects-content h1{
+.work-projects-content h1 {
   position: static;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   margin-top: 0;
   width: 100%;
 }
 .work-projects-content p.p-section {
   position: static;
-  font-size: 20px;
+  font-size: 1em;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   margin-top: 0;
   width: 100%;
 }
-.project p{
-  font-size: 18px;
+.project p {
+  font-size: 1em;
   text-align: left;
 }
-.work-projects-content{
+.work-projects-content {
   display: block;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .project-group {
-  min-width: 80vw;
-  flex: 0 0 80vw;
-  scroll-snap-align: start;
+  min-width: 60vw;
+  padding: 1rem;
+  margin-right: 1rem;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  padding: 2rem;
-  margin-right: 2rem;
 }
 
 /* Slider Styles */
 .slider {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  min-height: 400px;
   overflow: visible; /* allow arrows outside */
 }
 .slides {
@@ -378,9 +377,9 @@ form button {
   color: #fff;
   border-radius: 50%;
   border: none;
-  font-size: 2em;
-  width: 48px;
-  height: 48px;
+  font-size: 1.5em;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
   z-index: 10;
   transition: background 0.3s;
@@ -399,36 +398,36 @@ form button {
 /* Responsive for slider */
 @media (max-width: 900px) {
   .slider {
-    min-height: 400px;
+    min-height: 300px;
   }
   .project-group {
-    min-width: 95vw;
-    padding: 1rem;
+    min-width: 90vw;
+    padding: 0.5rem;
   }
   .slider-arrow.left {
-    left: -30px;
+    left: -20px;
   }
   .slider-arrow.right {
-    right: -30px;
+    right: -20px;
   }
 }
 @media (max-width: 600px) {
   .slider {
-    min-height: 300px;
+    min-height: 200px;
   }
   .slider-arrow {
-    font-size: 1.5em;
-    width: 36px;
-    height: 36px;
+    font-size: 1em;
+    width: 28px;
+    height: 28px;
   }
   .project-group {
     min-width: 100vw;
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
   .slider-arrow.left {
-    left: -10px;
+    left: -5px;
   }
   .slider-arrow.right {
-    right: -10px;
+    right: -5px;
   }
 }
