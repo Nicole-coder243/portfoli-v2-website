@@ -33,7 +33,7 @@ Explore my work, see how I approach design, and get a feel for what drives me!
 ## 🤝 Contributing
 
 Feel free to reach out if you have suggestions, feedback, or just want to connect!  
-You can open an issue, submit a pull request, or contact me directly.
+contact me directly.
 
 ## 📄 License
 
